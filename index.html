@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub - Online Education</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-content">
+        <h1>LearnHub</h1>
+        <p>Learn courses and attend tests online</p>
+      </div>
+    </header>
+
+    <main class="container layout">
+      <section class="panel">
+        <h2>Courses</h2>
+        <p class="muted">Choose a course and start learning.</p>
+        <div id="courseList" class="course-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2 id="lessonTitle">Select a course</h2>
+        <p id="lessonIntro" class="muted">
+          Course details and lessons will appear here.
+        </p>
+        <ul id="lessonList" class="lesson-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Course Test</h2>
+        <p class="muted">Take a short quiz after learning.</p>
+        <form id="quizForm"></form>
+        <div class="quiz-actions">
+          <button id="submitQuizBtn" type="button" class="btn" disabled>
+            Submit Test
+          </button>
+          <button id="resetQuizBtn" type="button" class="btn secondary" disabled>
+            Reset
+          </button>
+        </div>
+        <div id="quizResult" class="result"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Your Progress</h2>
+        <p class="muted">Saved in your browser.</p>
+        <div id="progressInfo" class="progress-info"></div>
+        <h3>Attempt History</h3>
+        <ul id="historyList" class="history-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
